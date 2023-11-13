@@ -68,6 +68,10 @@ public class Prodotto {
     public String getCodiceModificato() {
         return String.format("%08d", codice);
     }
+    
+    public String getNomeCompleto( ) {
+    	return getCodiceModificato() +"-"+ getNome();
+    }
 
     @Override
     public String toString() {
@@ -79,6 +83,7 @@ public class Prodotto {
     			+ "Prezzo Iniziale: " + String.format("%.02f", getPrezzo()) + "€\n"
     			+ "Iva Imposta: " + getIva() + "%\n"
     			+ "---------------------------\n"
+    			+ "Nome Completo Prodotto: " + getNomeCompleto() +"\n"
     			+ "Prezzo Finale: " + String.format("%.02f", getPrezzoIntero()) + "€";
     }
 
