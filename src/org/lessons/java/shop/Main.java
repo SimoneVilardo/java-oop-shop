@@ -36,7 +36,7 @@ public class Main {
 		
 		for (int x=0; x<prodottiDaCucina.length; x++) {
 			
-			Prodotto p = new Prodotto(rnd.nextInt(1000), prodottiDaCucina[x], descrizioniProdotti[x], rnd.nextFloat(0, 100), 21);
+			Prodotto p = new Prodotto(rnd.nextInt(10000000), prodottiDaCucina[x], descrizioniProdotti[x], rnd.nextFloat(0, 100), 21);
 			System.out.println(p);
 		}
 
